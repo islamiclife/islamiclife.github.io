@@ -1,31 +1,3 @@
-/*!
- * Lightbox v2.9.0
- * by Lokesh Dhakar
- *
- * More info:
- * http://lokeshdhakar.com/projects/lightbox2/
- *
- * Copyright 2007, 2015 Lokesh Dhakar
- * Released under the MIT license
- * https://github.com/lokesh/lightbox2/blob/master/LICENSE
- */
-
-if (window.location.protocol == 'http:') {
-	
-	console.log("you are accessing us via "
-		+ "an insecure protocol (HTTP). "
-		+ "Redirecting you to HTTPS.");
-		
-	window.location.href =
-		window.location.href.replace(
-				'http:', 'https:');
-}
-else
-	(window.location.protocol == "https:") {
-		console.log("you are accessing us via"
-			+ " our secure HTTPS protocol.");
-	}
-
 
 // Uses Node, AMD or browser globals to create a module.
 
