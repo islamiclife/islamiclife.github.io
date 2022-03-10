@@ -10,7 +10,25 @@
  * https://github.com/lokesh/lightbox2/blob/master/LICENSE
  */
 
+if (window.location.protocol == 'http:') {
+	
+	console.log("you are accessing us via "
+		+ "an insecure protocol (HTTP). "
+		+ "Redirecting you to HTTPS.");
+		
+	window.location.href =
+		window.location.href.replace(
+				'http:', 'https:');
+}
+else
+	(window.location.protocol == "https:") {
+		console.log("you are accessing us via"
+			+ " our secure HTTPS protocol.");
+	}
+
+
 // Uses Node, AMD or browser globals to create a module.
+
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
