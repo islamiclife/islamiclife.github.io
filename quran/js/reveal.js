@@ -5,6 +5,10 @@
  *
  * Copyright (C) 2020 Hakim El Hattab, http://hakim.se
  */
+
+document.addEventListener('contextmenu', 
+	event => event.preventDefault());
+
 (function( root, factory ) {
 	if( typeof define === 'function' && define.amd ) {
 		// AMD. Register as an anonymous module.
